@@ -66,6 +66,6 @@ app.delete('/errands/:id', (request, response) => {
         errands
     });
 });
-app.listen(3333, () => {
+app.listen(process.env.PORT || 3333, () => {
     console.log('servidor rodando');
 });
